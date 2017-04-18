@@ -1,13 +1,13 @@
+@import 'reset';
 
 @import 'components/header';
+@import 'components/contact';
+@import 'components/signup';
+@import 'components/footer';
 
 $bgColor: #ccc;
 
 body {
   background: $bgColor;
 
-  h1 {
-    color: black;
-    text-transform: uppercase;
-  }
 }
