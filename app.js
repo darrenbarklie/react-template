@@ -1,15 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { BrowserRouter } from 'react-router-dom';
+import {
+  BrowserRouter as Router, Route, Link, Switch
+} from 'react-router-dom';
 
 import Layout from './js/Layout';
 
 require('./sass/base.scss');
 
 ReactDOM.render(
-    <BrowserRouter>
+    <Router>
       <Layout />
-    </BrowserRouter>,
+    </Router>,
   document.getElementById('root')
 );

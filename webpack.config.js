@@ -8,7 +8,10 @@ module.exports = {
       './app.js',
     ]
   },
-  output: { path: __dirname, filename: 'bundle.js' },
+  output: {
+    path: __dirname,
+    filename: 'bundle.js'
+  },
   watch: true,
   module: {
     loaders: [
