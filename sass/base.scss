@@ -1,0 +1,13 @@
+
+@import 'components/header';
+
+$bgColor: #eee;
+
+body {
+  background: $bgColor;
+
+  h1 {
+    color: black;
+    text-transform: uppercase;
+  }
+}
