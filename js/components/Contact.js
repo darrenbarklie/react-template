@@ -4,7 +4,7 @@ export default class Contact extends React.Component {
   render() {
     return (
       <div className="contact">
-        <span class="label">This is the Contact component</span>
+        <span className="label">This is the Contact component</span>
       </div>
     )
   }

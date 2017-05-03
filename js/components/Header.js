@@ -1,12 +1,14 @@
 import React from 'react';
 
 import Navigation from './Navigation';
+import Logo from './Logo';
+
 
 export default class Header extends React.Component {
   render() {
     return (
       <header className="header">
-        <span class="label">This is the NEW Header component</span>
+        <Logo />
         <Navigation />
       </header>
     )
