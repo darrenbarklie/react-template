@@ -1,9 +1,9 @@
 import React from 'react';
+import { render } from 'react-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import Header from './components/Header';
 import Stage from './components/Stage';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
 
 export default class Layout extends React.Component {
   render() {
@@ -11,8 +11,7 @@ export default class Layout extends React.Component {
       <div className="layout">
         <Header />
         <Stage />
-        <Contact />
-        <Footer />
+
       </div>
     )
   }

@@ -4,7 +4,7 @@ export default class Projects extends React.Component {
   render() {
     return (
       <div className="projects">
-        <span class="label">This is the Projects component</span>
+        <span className="label">This is the Projects component</span>
       </div>
     )
   }
