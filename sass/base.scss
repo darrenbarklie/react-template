@@ -12,12 +12,36 @@
 @import 'pages/blog';
 @import 'pages/contact';
 
+@font-face {
+  font-family: 'backissuesbolditalic';
+  src: url('./../assets/fonts/backissuesbb_boldital.woff2') format('woff2'),
+       url('./../assets/fonts/backissuesbb_boldital.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'backissuesitalic';
+  src: url('./../assets/fonts/backissuesbb_ital.woff2') format('woff2'),
+       url('./../assets/fonts/backissuesbb_ital.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'backissuesregular';
+  src: url('./../assets/fonts/backissuesbb_reg.woff2') format('woff2'),
+       url('./../assets/fonts/backissuesbb_reg.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 $bgColor: #ccc;
 
 html,
 body {
   height: 100%;
   background: $bgColor;
+  font-family: 'backissuesregular';
+  font-size: 18px;
 }
 .layout {
   height: 100%;
@@ -25,14 +49,9 @@ body {
   //background: url('../assets/svg/logo-test.svg') center center repeat;
 
   border: 1px solid black;
+  padding: 20px;
 }
 
-nav {
-  border: 1px solid red;
-}
-.scene {
-  border: 1px solid orange;
-}
 .stage {
   background:rgba(0,255,0,0.1);
 }

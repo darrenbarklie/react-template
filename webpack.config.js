@@ -37,6 +37,10 @@ module.exports = {
       { // Image Loader //
         test: /\.(jpe?g|png|gif|svg)$/i,
         use: 'file-loader'
+      },
+      { // Fonts Loader //
+        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        loader: 'file-loader?name=assets/fonts/[name].[ext]'
       }
     ]
   },
