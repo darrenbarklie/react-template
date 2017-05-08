@@ -10,7 +10,8 @@ module.exports = {
   },
   output: {
     path: __dirname,
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: '/'
   },
   watch: true,
   module: {
@@ -38,5 +39,8 @@ module.exports = {
         use: 'file-loader'
       }
     ]
+  },
+  devServer: {
+    historyApiFallback: true,
   },
 };
