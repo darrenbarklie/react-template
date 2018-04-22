@@ -1,3 +1,5 @@
+@import "../styles/_globals";
+
 .App {
   text-align: center;
 }
@@ -8,10 +10,10 @@
 }
 
 .App-header {
-  background-color: #222;
+  color: $brand-primary;
+  background-color: $brand-secondary;
   height: 150px;
   padding: 20px;
-  color: white;
 }
 
 .App-title {
