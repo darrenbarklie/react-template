@@ -3,7 +3,7 @@ import React from 'react';
 import Auxiliary from '../../../hoc/Auxiliary';
 
 const orderSummary = (props) => {
-  
+
   const ingredientSummary = Object.keys(props.ingredients)
     .map(ingKey => {
       return (
@@ -20,6 +20,8 @@ const orderSummary = (props) => {
         {ingredientSummary}
       </ul>
       <p>Continue to checkout?</p>
+      <button>CANCEL</button>
+      <button>CONTINUE</button>
     </Auxiliary>
   );
 };
