@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from '../../axios-orders';
 
+import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 import Auxiliary from '../../hoc/Auxiliary/Auxiliary';
 import Burger from '../../components/Burger/Burger';
 import BuildControls from '../../components/Burger/BuildControls/BuildControls';
@@ -115,7 +116,7 @@ class BurgerBuilder extends Component {
       ...this.state.ingredients
     };
 
-    for ( let key in disabledInfo) {
+    for ( let key in disabledInfo ) {
       disabledInfo[key] = disabledInfo[key] <= 0;
     }
 
@@ -124,6 +125,7 @@ class BurgerBuilder extends Component {
       price={this.state.totalPrice}
       purchaseCancelled={this.purchaseCancelHandler}
       purchaseContinued={this.purchaseContinueHandler} />;
+
     if (this.state.loading) {
       orderSummary = <Spinner />
     }
@@ -147,4 +149,4 @@ class BurgerBuilder extends Component {
   }
 }
 
-export default BurgerBuilder;
+export default withErrorHandler(BurgerBuilder, axios);
